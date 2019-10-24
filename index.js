@@ -19,7 +19,7 @@ var mainDefaults = {
   duration: 1000,
   fillMode: 'both',
   easing: 'ease',
-  iterations: 1,
+  // iterations: 1,
   delay: 0,
   direction: 'normal',
   resetWhenDone: false,
@@ -99,7 +99,7 @@ exports.runAnimation = promisify(function (els, opts, cb) {
     opts.name,
     addUnit(opts.duration, 'ms'),
     opts.easing,
-    opts.iterations,
+    // opts.iterations,
     addUnit(opts.delay, 'ms'),
     opts.direction,
     opts.fillMode
